@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(to bottom right, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 400% 400%;
+  animation: fondoAnimado 12s ease infinite;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  height: 100vh;
+}
+
+@keyframes fondoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  color: #fff;
+  margin-top: 20px;
+  text-shadow: 2px 2px 6px #000;
+  font-size: 2.2rem;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.draw {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 3s linear forwards;
+}
+
+.draw:nth-child(1) { animation-delay: 0.5s; }
+.draw:nth-child(2) { animation-delay: 1s; }
+.draw:nth-child(3) { animation-delay: 1.5s; }
+.draw:nth-child(4) { animation-delay: 2s; }
+.draw:nth-child(5) { animation-delay: 2.5s; }
+.draw:nth-child(6) { animation-delay: 3s; }
+.draw:nth-child(7) { animation-delay: 3.5s; }
+.draw:nth-child(8) { animation-delay: 4s; }
+.draw:nth-child(9) { animation-delay: 4.5s; }
+.draw:nth-child(10) { animation-delay: 5s; }
+.draw:nth-child(11) { animation-delay: 5.5s; }
+.draw:nth-child(12) { animation-delay: 6s; }
+.draw:nth-child(13) { animation-delay: 6.5s; }
+.draw:nth-child(14) { animation-delay: 7s; }
+.draw:nth-child(15) { animation-delay: 7.5s; }
+
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+.msg {
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 20px;
+  text-shadow: 1px 1px 4px #000;
+}
